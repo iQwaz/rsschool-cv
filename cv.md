@@ -36,7 +36,7 @@ function alphabetPosition(text) {
 ## Education
 
 - #### Belgorod State Technological University by V. G. Shukhov
-  _2002-2007, Specialist (Bachelor Degree), Mechanical Engineering_
+  _2002-2007, Bachelor and Specialist Degree, Mechanical Engineering_
 
 - #### Layout Designer course on [Hexlet.io](https://hexlet.io)
   _2021, In process..._
@@ -45,7 +45,7 @@ function alphabetPosition(text) {
 
 - #### Cognitive Biases
 
-  Landing page for first  project of Layout Designer course on Hexlet.io
+  Landing page for first project of Layout Designer course on Hexlet.io
 
   Github: https://github.com/iQwaz/layout-designer-project-lvl1
 
