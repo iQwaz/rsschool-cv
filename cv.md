@@ -47,17 +47,17 @@ function alphabetPosition(text) {
 
   Landing page for first project of Layout Designer course on Hexlet.io
 
-  Github: https://github.com/iQwaz/layout-designer-project-lvl1
+  Github: [https://github.com/iQwaz/layout-designer-project-lvl1](https://github.com/iQwaz/layout-designer-project-lvl1)
 
-  Deploy: http://qwaz-layout-designer-lvl1.surge.sh/
+  Deploy: [http://qwaz-layout-designer-lvl1.surge.sh/](http://qwaz-layout-designer-lvl1.surge.sh/)
 
 - #### Music Box
 
   Second project of Layout Designer course on Hexlet.io
 
-  Github: https://github.com/iQwaz/layout-designer-project-lvl2
+  Github: [https://github.com/iQwaz/layout-designer-project-lvl2](https://github.com/iQwaz/layout-designer-project-lvl2)
 
-  Deploy: http://qwaz-layout-designer-lvl2.surge.sh/
+  Deploy: [http://qwaz-layout-designer-lvl2.surge.sh/](http://qwaz-layout-designer-lvl2.surge.sh/)
 
 ## English
 - Pre-Intermediate (A2)
