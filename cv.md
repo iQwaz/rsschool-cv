@@ -4,6 +4,7 @@
 
 ## Contacts
 
+- Location: Russia, Belgorod
 - E-mail: dev@kozedub.ru
 - Telegram: [@iQwaz](https://t.me/iQwaz)
 - Github: [https://github.com/iQwaz](https://github.com/iQwaz)
