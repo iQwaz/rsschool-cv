@@ -60,5 +60,6 @@ function alphabetPosition(text) {
 
   Deploy: [http://qwaz-layout-designer-lvl2.surge.sh/](http://qwaz-layout-designer-lvl2.surge.sh/)
 
-## English
-- Pre-Intermediate (A2)
+## Languages
+- English: _Pre-Intermediate (A2)_
+- Russian: _Native_
