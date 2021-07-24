@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet"
     href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
@@ -13,11 +16,11 @@
 <body>
   <div class="wrapper">
     <header>
+      <img class="avatar" src="./images/avatar.png" alt="Avatar">
       <h1>Kirill Kozedub</h1>
-      <img src="./images/avatar.png" alt="Avatar">
       <h2>Entry-Level Frontend Developer</h2>
       <h3 class="sr-only">Contacts</h3>
-      <ul>
+      <ul class="contacts">
         <li>
           <h4>Location</h4>
           <p>Russia, Belgorod</p>
@@ -52,8 +55,7 @@
       </section>
       <section>
         <h3>Example of code</h3>
-        <pre><code class="language-javascript">
-  function alphabetPosition(text) {
+        <pre><code #ebedfb;" class="language-javascript">funnction alphabetPosition(text) {
     const alfabet = "abcdefghijklmnopqrstuvwxyz"
     let result = "";
     for (let i = 0; i < text.length; i += 1) {
@@ -64,8 +66,7 @@
       }
     }
     return result.trim();
-  }
-      </code></pre>
+  }</code></pre>
       </section>
       <section>
         <h3>Education</h3>
