@@ -82,8 +82,9 @@ a:hover {
 }
 
 .contacts h4 {
-  font-size: 12px;
   margin-top: 20px;
+
+  font-size: 12px;
 }
 
 .contacts p {
