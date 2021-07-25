@@ -8,6 +8,7 @@ body {
   padding: 0;
 
   color: #696969;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -38,6 +39,20 @@ h1 {
   line-height: 48px;
 }
 
+h2 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  font-style: italic;
+}
+
 ul {
   padding-left: 0;
 }
@@ -46,11 +61,34 @@ li {
   list-style-type: none;
 }
 
+.pl-15 {
+  padding-left: 15px;
+}
+
+a {
+  color: #202020;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .contacts {
   display: flex;
   gap: 40px;
 
   font-size: 12px;
+}
+
+.contacts h4 {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.contacts p {
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .wrapper {
@@ -62,7 +100,85 @@ section {
   padding: 15px;
 }
 
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.skill-item {
+  width: 120px;
+}
+
+.skill-item::before {
+  position: relative;
+  top: 35px;
+
+  display: block;
+  width: 100%;
+  height: 10px;
+
+  background-color: #ebedfb;
+
+  content: "";
+}
+
+.skill-html::after {
+  position: relative;
+  top: 6px;
+
+  display: block;
+  width: 80%;
+  height: 10px;
+
+  background-color: #2c40dd;
+
+  content: "";
+}
+
+.skill-preprocessor::after {
+  position: relative;
+  top: 6px;
+
+  display: block;
+  width: 60%;
+  height: 10px;
+
+  background-color: #2c40dd;
+
+  content: "";
+}
+
+.skill-js::after {
+  position: relative;
+  top: 6px;
+
+  display: block;
+  width: 15%;
+  height: 10px;
+
+  background-color: #2c40dd;
+
+  content: "";
+}
+
+.skill-git::after {
+  position: relative;
+  top: 6px;
+
+  display: block;
+  width: 75%;
+  height: 10px;
+
+  background-color: #2c40dd;
+
+  content: "";
+}
+
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px;
 
   background-color: #ebedfb;
