@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <title>Entry-level Frontend Developer CV</title>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <nav class="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menu-box">
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#code">Example of code</a></li>
+          <li><a href="#educaion">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+
+      </nav>
+      <img class="avatar" src="./images/avatar.png" alt="Avatar">
+      <h1>Kirill&nbsp;Kozedub</h1>
+      <h2>Entry-Level Frontend Developer</h2>
+      <h3 class="sr-only">Contacts</h3>
+      <ul class="contacts">
+        <li>
+          <h4>Location:</h4>
+          <p>Russia, Belgorod</p>
+        </li>
+        <li>
+          <h4>E-mail:</h4>
+          <p><a href="mailto:dev@kozedub.ru">dev@kozedub.ru</a></p>
+        </li>
+        <li>
+          <h4>Github:</h4>
+          <p><a href="https://github.com/iQwaz">https://github.com/iQwaz</a></p>
+        </li>
+        <li>
+          <h4>Telegram:</h4>
+          <p><a href="https://t.me/iQwaz">@iQwaz</a></p>
+        </li>
+      </ul>
+  </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section id="summary">
+        <h3>Summary</h3>
+        <p class="pl-15">I'm highly motivated beginner front-end developer. Writing code is dream of all my life and now I'm on my way to it.</p>
+      </section>
+      <section id="skills">
+        <h3>Technical Skills</h3>
+        <ul class="skills">
+          <li class="skill-item skill-html">HTML/CSS</li>
+          <li class="skill-item skill-preprocessor">Sass, Pug</li>
+          <li class="skill-item skill-js">JavaScript</li>
+          <li class="skill-item skill-git">Git</li>
+        </ul>
+      </section>
+      <section id="code">
+        <h3>Example of code</h3>
+        <pre><code class="language-javascript">funnction alphabetPosition(text)
+  const alfabet = "abcdefghijklmnopqrstuvwxyz"
+  let result = "";
+  for (let i = 0; i &lt; text.length; i += 1) {
+    text = text.toLowerCase();
+    if (alfabet.indexOf(text[i]) !== -1) {
+      result += alfabet.indexOf(text[i]) + 1;
+      result += " ";
+    }
+  }
+  return result.trim();
+  }</code></pre>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <h4>Belgorod State Technological University by V. G. Shukhov</h4>
+            <p class="pl-15">
+              <time datetime="2002">2002</time> - <time datetime="2007">2007</time>, Bachelor and Specialist Degree, Mechanical Engineering
+            </p>
+          </li>
+          <li>
+            <h4>Layout Designer course on Hexlet.io</h4>
+            <p class="pl-15">
+              <time datetime="2021">2021</time>, In progress...
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h3>Projects on Github</h3>
+        <ul class="projects">
+          <li>
+            <h4>Cognitive Biases</h4>
+              <figure>
+                <a href="https://github.com/iQwaz/layout-designer-project-lvl1" target="_blank">
+                  <img src="./images/cognitive_biases.png" alt="Cognitive Biases Screenshot">
+                </a>
+                <figcaption>First project of Layout Designer course on Hexlet.io</figcaption>
+              </figure>
+          </li>
+          <li>
+            <h4>Music Box</h4>
+              <figure>
+                <a href="https://github.com/iQwaz/layout-designer-project-lvl2" target="_blank">
+                  <img src="./images/musicbox.png" alt="Music Box Screenshot">
+                </a>
+                <figcaption>Second project of Layout Designer course on Hexlet.io</figcaption>
+              </figure>
+        </ul>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <ul>
+          <li>
+            <p class="pl-15">English: <em>Pre-Intermediate (A2)</em></p>
+          </li>
+          <li>
+            <p class="pl-15">Russian: <em>Native</em></p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper footer-position">
+      <p>Copyright &copy; <time datetime="2018">2021</time> <a href="https://github.com/iQwaz">iQwaz</a></p>
+      <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School JS Course Logo" width="75"></a>
+    </div>
+  </footer>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
