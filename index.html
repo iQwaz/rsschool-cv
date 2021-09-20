@@ -9,15 +9,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/styles/default.min.css">
-  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.1.0/build/highlight.min.js"></script>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
   <title>Entry-level Frontend Developer CV</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
+  <header>
+    <div class="wrapper">
+      <nav class="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span></span>
+        </label>
+        <ul class="menu-box">
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#code">Example of code</a></li>
+          <li><a href="#educaion">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+
+      </nav>
       <img class="avatar" src="./images/avatar.png" alt="Avatar">
-      <h1>Kirill Kozedub</h1>
+      <h1>Kirill&nbsp;Kozedub</h1>
       <h2>Entry-Level Frontend Developer</h2>
       <h3 class="sr-only">Contacts</h3>
       <ul class="contacts">
@@ -38,13 +53,15 @@
           <p><a href="https://t.me/iQwaz">@iQwaz</a></p>
         </li>
       </ul>
-    </header>
-    <main>
-      <section>
+  </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <section id="summary">
         <h3>Summary</h3>
         <p class="pl-15">I'm highly motivated beginner front-end developer. Writing code is dream of all my life and now I'm on my way to it.</p>
       </section>
-      <section>
+      <section id="skills">
         <h3>Technical Skills</h3>
         <ul class="skills">
           <li class="skill-item skill-html">HTML/CSS</li>
@@ -53,22 +70,22 @@
           <li class="skill-item skill-git">Git</li>
         </ul>
       </section>
-      <section>
+      <section id="code">
         <h3>Example of code</h3>
-        <pre><code class="language-javascript">funnction alphabetPosition(text) {
-    const alfabet = "abcdefghijklmnopqrstuvwxyz"
-    let result = "";
-    for (let i = 0; i &lt; text.length; i += 1) {
-      text = text.toLowerCase();
-      if (alfabet.indexOf(text[i]) !== -1) {
-        result += alfabet.indexOf(text[i]) + 1;
-        result += " ";
-      }
+        <pre><code class="language-javascript">funnction alphabetPosition(text) 
+  const alfabet = "abcdefghijklmnopqrstuvwxyz"
+  let result = "";
+  for (let i = 0; i &lt; text.length; i += 1) {
+    text = text.toLowerCase();
+    if (alfabet.indexOf(text[i]) !== -1) {
+      result += alfabet.indexOf(text[i]) + 1;
+      result += " ";
     }
-    return result.trim();
+  }
+  return result.trim();
   }</code></pre>
       </section>
-      <section>
+      <section id="education">
         <h3>Education</h3>
         <ul>
           <li>
@@ -85,24 +102,30 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="projects">
         <h3>Projects on Github</h3>
-        <ul>
+        <ul class="projects">
           <li>
             <h4>Cognitive Biases</h4>
-            <p class="pl-15">Landing page for first project of Layout Designer course on Hexlet.io</p>
-            <p class="pl-15">Github: <a href="https://github.com/iQwaz/layout-designer-project-lvl1">https://github.com/iQwaz/layout-designer-project-lvl1</a></p>
-            <p class="pl-15">Deploy: <a href="http://qwaz-layout-designer-lvl1.surge.sh/">http://qwaz-layout-designer-lvl1.surge.sh/</a></p>
+              <figure>
+                <a href="https://github.com/iQwaz/layout-designer-project-lvl1" target="_blank">
+                  <img src="/images/cognitive_biases.png" alt="Cognitive Biases Screenshot">
+                </a>
+                <figcaption>First project of Layout Designer course on Hexlet.io</figcaption>
+              </figure>
+            </a>
           </li>
           <li>
             <h4>Music Box</h4>
-            <p class="pl-15">Landing page for second project of Layout Designer course on Hexlet.io</p>
-            <p class="pl-15">Github: <a href="https://github.com/iQwaz/layout-designer-project-lvl2">https://github.com/iQwaz/layout-designer-project-lvl2</a></p>
-            <p class="pl-15">Deploy: <a href="http://qwaz-layout-designer-lvl2.surge.sh/">http://qwaz-layout-designer-lvl2.surge.sh/</a></p>
-          </li>
+              <figure>
+                <a href="https://github.com/iQwaz/layout-designer-project-lvl2" target="_blank">
+                  <img src="/images/musicbox.png" alt="Music Box Screenshot">
+                </a>
+                <figcaption>Second project of Layout Designer course on Hexlet.io</figcaption>
+              </figure>
         </ul>
       </section>
-      <section>
+      <section id="languages">
         <h3>Languages</h3>
         <ul>
           <li>
@@ -113,12 +136,14 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper footer-position">
       <p>Copyright &copy; <time datetime="2018">2021</time> <a href="https://github.com/iQwaz">iQwaz</a></p>
       <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS School JS Course Logo" width="75"></a>
-    </footer>
-  </div>
+    </div>
+  </footer>
   <script>hljs.highlightAll();</script>
 </body>
 </html>

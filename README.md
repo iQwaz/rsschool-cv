@@ -1,2 +1,2 @@
 # rsschool-cv
-https://iQwaz.github.io/rsschool-cv/cv
+# https://iQwaz.github.io/rsschool-cv

@@ -1,6 +1,8 @@
 html {
   margin: 0;
   padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +18,97 @@ header {
   padding: 15px;
 
   background-color: #ebedfb;
+}
+
+nav {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 0 0 10px 0;
+  border-bottom: #202020 1px solid;
+
+  column-gap: 25px;
+  row-gap: 5px;
+
+  background-color: #ebedfb;
+
+  visibility: visible;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+
+  width: 20px;
+  height: 15px;
+
+  visibility: hidden;
+
+  cursor: pointer;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  position: absolute;
+
+  display: block;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #202020;
+}
+
+.menu-btn > span::before {
+  top: -7px;
+
+  content: '';
+}
+
+.menu-btn > span::after {
+  top: 7px;
+
+  content: '';
+}
+
+#menu-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+
+  transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu-box {
+  visibility: visible;
 }
 
 .avatar {
@@ -76,7 +169,10 @@ a:hover {
 
 .contacts {
   display: flex;
-  gap: 40px;
+  gap: 30px;
+  justify-content: space-between;
+
+  padding-right: 15px;
 
   font-size: 12px;
 }
@@ -93,7 +189,7 @@ a:hover {
 }
 
 .wrapper {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -103,7 +199,9 @@ section {
 
 .skills {
   display: flex;
+  gap: 15px;
   justify-content: space-between;
+
   padding: 0 15px;
 }
 
@@ -129,7 +227,7 @@ section {
   top: 6px;
 
   display: block;
-  width: 80%;
+  width: 65%;
   height: 10px;
 
   background-color: #2c40dd;
@@ -142,7 +240,7 @@ section {
   top: 6px;
 
   display: block;
-  width: 60%;
+  width: 50%;
   height: 10px;
 
   background-color: #2c40dd;
@@ -168,7 +266,7 @@ section {
   top: 6px;
 
   display: block;
-  width: 75%;
+  width: 60%;
   height: 10px;
 
   background-color: #2c40dd;
@@ -176,13 +274,45 @@ section {
   content: "";
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  padding: 0 15px;
+}
+
+figure {
+
+  display: flex;
+  flex-flow: column;
+  max-width: 220px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px #c0c0c0 solid;
+}
+
+img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  padding: 3px;
+
+  font-size: 12px;
+  text-align: center;
+}
+
 footer {
+  background-color: #ebedfb;
+}
+
+.footer-position {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-
-  background-color: #ebedfb;
 }
 
 .sr-only {
@@ -200,4 +330,47 @@ footer {
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-top: 35px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .menu-box {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 1;
+
+    flex-direction: column;
+    width: 130px;
+    border: none;
+
+    visibility: hidden;
+  }
+
+  .menu-btn {
+    visibility: visible;
+  }
+
+  .contacts {
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    width: 150px;
+  }
 }
